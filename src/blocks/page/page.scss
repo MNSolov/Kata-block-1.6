@@ -1,0 +1,15 @@
+@import "~normalize.css";
+//@import '../../fonts/fonts.scss';
+@import '../../fonts/fonts.css';
+
+$mobile: 320px;
+$tablet: 768px;
+$desctop: 1119px;
+$font-family: "TT Lakes", "Arial", sans-serif;
+
+.page {
+    margin: 0;
+    background: #F8F8F8;
+
+    box-sizing: border-box;
+}

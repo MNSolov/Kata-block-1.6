@@ -1,0 +1,82 @@
+@import "../page/page.scss";
+
+$font-color: #1B1C21;
+$font-size: 16px;
+
+$border: 2px solid #B8FFEC;
+$border-radius: 6px;
+$background-color: #FFFFFF;
+
+$link-border: 2px solid #F8F8F8;
+$link-color: #1B1C21;
+$link-padding: 20px;
+
+$item-color: #7E7E82;
+
+.menu {
+    font-family: $font-family;
+    font-style: normal;
+    color: $font-color;
+    font-size: $font-size;
+    
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+
+    display: flex;
+    
+    list-style: none;
+    justify-content: flex-start;
+    align-items: baseline;
+    overflow: scroll;
+
+    @media (min-width: $desctop) {
+        flex-wrap: wrap;       
+    }
+
+    &__item {
+        color: $item-color;
+        text-align: center;
+
+        &--select {
+            border: $border;
+            border-radius: $border-radius;
+            background-color: $background-color;
+        }
+    }
+
+    &__link {
+        margin: 0;
+        color: $link-color; 
+        display: flex;
+        text-decoration: none;
+        padding-left: $link-padding;
+        padding-right: $link-padding;
+        width: auto;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        border: $link-border;
+        white-space: nowrap;
+
+        &:link {
+            text-decoration: none; 
+            color: $link-color;
+        }
+
+        &:hover {
+            border: $border;
+            border-radius: $border-radius;
+            background-color: $background-color;   
+        }
+    }
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        display:none;
+    }
+}
+

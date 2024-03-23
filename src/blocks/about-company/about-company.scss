@@ -1,0 +1,124 @@
+@import "../page/page.scss";
+
+.about-company {
+    
+    height: 320px;
+    align-content: space-around;
+    
+    width: 100%;
+    height: 100%;
+    //margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   // width: 100%;
+    height: 100%;
+    align-items: stretch;
+
+    @media (min-width: $tablet) {
+        flex-wrap: wrap;
+        height: 400px;
+    }
+
+    @media (min-width: $desctop) {
+        flex-wrap: wrap;
+        height: 400px;
+    }
+
+    &__expand {
+        margin-left: 16px;
+        display: flex;
+        font-family: $font-family;
+        font-size: 16px;
+        color: #1B1C21;
+        align-items: center;
+        width: 132px;
+        height: 24px;
+        font-weight: 700;
+
+        &:link {
+            text-decoration: none;
+        }
+
+        @media (min-width: $tablet) {
+
+            margin-bottom: 100px;
+        }
+
+        @media (min-width: $desctop) {
+            margin-bottom: 5%;
+        }
+    }
+
+    &__text {
+        margin-bottom: 10px;
+
+        font-family: $font-family;
+        font-size: 14px;
+        color: #1B1C21;
+        
+        padding-left: 25px;
+        padding-right: 25px;
+        line-height: 1.3;
+        letter-spacing: 0.2px;
+      //  width: 100%;
+      //  overflow: hidden;
+
+        @media (min-width: $tablet) {
+
+            width: 45%;
+        }
+
+        @media (min-width: $desctop) {
+            width: 50%;
+        }
+    }
+
+    &__part2 {
+        display: none;
+
+        @media (min-width: $tablet) {
+
+            display: inline-block;
+        }
+
+        @media (min-width: $desctop) {
+            display: none;
+        }
+    }
+
+    &__part3 {
+        display: none;
+
+        @media (min-width: $tablet) {
+
+            padding-right: 3%;
+            border-radius: 6px;
+        }
+
+        @media (min-width: $desctop) {
+            display: inline-block;
+        }
+    }
+    
+
+    &__picture {
+        padding-top: 15px;
+
+        width: 100%;
+
+        @media (min-width: $tablet) {
+
+            width: 45%;
+            padding-right: 3%;
+            border-radius: 6px; 
+        }
+
+        @media (min-width: $desctop) {
+            width: 40%;
+            padding-right: 3%;
+            border-radius: 6px; 
+            margin-bottom: 50px;
+        }
+    }
+}

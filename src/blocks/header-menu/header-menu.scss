@@ -1,0 +1,57 @@
+@import '../page/page.scss';
+
+$line-color: #EAEAEA;
+$width: 100%;
+
+
+.header-menu {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+
+    justify-content: space-between;
+    align-items: center;
+
+    white-space: nowrap;
+    width: $width;
+
+    &__item {
+        
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+            
+            @media (max-width: $tablet) {
+
+                display: none;
+            }
+        }
+
+        &:nth-child(3) {
+
+            flex-grow: 1.1;
+        }
+    }
+
+    &__button {
+
+        border: none;
+        background-color: transparent;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__line {
+
+        width: 2px;
+        height: 32px;
+        background-color: $line-color;
+    }
+}

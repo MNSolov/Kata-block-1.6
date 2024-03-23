@@ -1,0 +1,22 @@
+@import '../page/page.scss';
+
+$header-color: #FFFFFF;
+$border-color: #D9FFF5;
+
+.header {
+    background-color: $header-color;
+
+    border-bottom: 1px solid $border-color;
+    height: 88px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media (min-width: $desctop) {
+
+        display: none;
+    }
+}

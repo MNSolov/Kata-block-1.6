@@ -1,0 +1,44 @@
+@import '../page/page.scss';
+
+
+$font-color: #1B1C21;
+$font-size: 28px;
+
+$width: 265px;
+$height: 40px;
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        font-family: $font-family;
+        font-style: normal;
+        color: $font-color;
+        font-size: $font-size;
+        white-space: nowrap;
+        text-align: end;
+        
+        padding-left: 1px;
+        
+        width: $width;
+        height: $height;
+        
+        position: relative;
+        flex-shrink: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+
+            width: 4px;
+            height: 40px;
+            background-color: #41F6D7;
+            border-radius: 0 4px 4px 0;
+
+            top: -5px;
+        }
+    }
+}
