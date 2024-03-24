@@ -34,20 +34,6 @@ $width: 100%;
         }
     }
 
-    &__button {
-
-        border: none;
-        background-color: transparent;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
-
     &__line {
 
         width: 2px;

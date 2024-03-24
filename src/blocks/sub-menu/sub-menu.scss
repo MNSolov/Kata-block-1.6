@@ -21,8 +21,7 @@ $button-space: 10px;
     }
 
     &__button {
-        border: none;
-        background-color: transparent;
+
         font-family: $font-family;
         font-style: normal;
         color: $font-color;
@@ -36,10 +35,10 @@ $button-space: 10px;
 
         width: $button-width;
 
-        gap: $button-space;
+       
     }
 
     &__item {
-
+        gap: $button-space;
     }
 }

@@ -1,0 +1,32 @@
+@import "../page/page.scss";
+
+$aside-backgroud-color: white;
+$aside-width: 320px;
+$aside-height: 100%;
+$aside-min-height: 750px;
+
+$sub-menu-padding: 20px;
+
+.aside {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: $aside-width;
+   // box-shadow: 16px 0 52px 0 rgba(69,79,126,0.5);
+    height: $aside-height;
+    min-height: $aside-min-height;
+    background-color: $aside-backgroud-color;
+
+    @media (min-width: $desctop) {
+
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+

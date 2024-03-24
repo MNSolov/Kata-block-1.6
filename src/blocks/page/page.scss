@@ -12,4 +12,12 @@ $font-family: "TT Lakes", "Arial", sans-serif;
     background: #F8F8F8;
 
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desctop) {
+
+        flex-direction: row;
+    }
 }

@@ -1,0 +1,68 @@
+@import "../page/page.scss";
+
+$font-color: #1B1C21;
+$font-hover-color: #41F6D7;
+$font-size: 16px;
+$letter-spacing: -0.2px;
+
+$text-padding: 20px;
+
+$link-shadow-color: #41F6D7;
+$link-height: 50px;
+$link-width: 100%;
+$transition-time: 0.7s;
+
+.aside-menu {
+    list-style: none;
+    padding: 0;
+
+    font-family: $font-family;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+
+    display: flex;
+    flex-direction: column;
+   // color: $font-color;
+
+    &__item {
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        height: $link-height;
+        width: $link-width;
+        color: $font-color;
+
+        &:link {
+            text-decoration: none;
+            padding-left: $text-padding;
+            color: $font-color;
+        }
+        
+        &:hover {
+            color: $font-hover-color;
+            transition: $transition-time;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 4px;
+                height: 40px;
+                border-radius: 0 4px 4px 0;
+                background-color: $link-shadow-color;
+                transition: $transition-time;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

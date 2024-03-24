@@ -1,0 +1,47 @@
+@import "../page/page.scss";
+
+$text-color: #1B1C21;
+$text-color-hover: #41F6D7;
+$font-size: 16px;
+
+$padding: 20px;
+
+$transition-time: 0.7px;
+
+.menu-lang {
+    list-style: none;
+    display: flex;
+    padding-left: $padding;
+    gap: $padding;
+
+    font-family: $font-family;
+    font-size: $font-size;
+
+    letter-spacing: -0.2px;
+
+    color: $text-color;
+
+    &__link {
+        color: $text-color;
+    
+        &:link {
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $text-color-hover;
+            transition: $transition-time;
+        }
+
+        &--selected {
+            color: $text-color-hover;
+        }
+    }
+}
+
+
+
+
+
+
+

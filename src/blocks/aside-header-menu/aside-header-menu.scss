@@ -1,0 +1,28 @@
+@import "../page/page.scss";
+
+$padding: 20px;
+
+.aside-header-menu {
+
+    list-style: none;
+    display: flex;
+
+    padding-left: $padding;
+    padding-right: $padding;
+
+    &__item {
+        
+        &:first-child {
+
+            @media (min-width: $tablet) {
+
+                display: none;
+            }
+        }
+
+        &:nth-child(2) {
+
+            flex-grow: 1.1;
+        }
+    }
+}
