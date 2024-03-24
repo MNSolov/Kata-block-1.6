@@ -12,3 +12,5 @@ import '../blocks/aside-menu/aside-menu.scss';
 import '../blocks/aside-footer/aside-footer.scss';
 import '../blocks/aside-footer-menu/aside-footer-menu.scss';
 import '../blocks/menu-lang/menu-lang.scss';
+import '../blocks/brands/brands.scss';
+import '../blocks/brands/brands.js';
