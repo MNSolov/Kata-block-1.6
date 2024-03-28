@@ -16,9 +16,9 @@ $font-weight: 500;
 $card-gap: 10px;
 
 $menu-height: 220px;
-$menu-height--state-big: 400px;
-$menu-height-tablet--state-big: 400px;
-$menu-height-desctop--state-big: 400px;
+$menu-height--state-big: 450px;
+$menu-height-tablet--state-big: 650px;
+$menu-height-desctop--state-big: 450px;
 
 .repair {
 
@@ -138,6 +138,22 @@ $menu-height-desctop--state-big: 400px;
             transition-duration: 0.8s;
         }
         
+    }
+
+    &__button-show {
+        
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+        @media (min-width: $tablet) {
+
+            display: flex;
+        }
+
+        @media (min-width: $desctop) {
+                
+            display: flex;
+        }
     }
 
 }

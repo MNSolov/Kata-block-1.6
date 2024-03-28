@@ -19,3 +19,4 @@ import '../blocks/header-section/header-section.scss';
 import '../blocks/slider/slider.js';
 import '../blocks/slider/slider.scss';
 import '../blocks/repair/repair.scss';
+import '../blocks/repair/repair.js';

@@ -125,13 +125,11 @@ $card-color: #ffffff;
             display: flex;
         }
 
-        &__button-show {
-
-            @media (min-width: $desctop) {
+        @media (min-width: $desctop) {
                 
-                display: flex;
-            }
+            display: flex;
         }
+        
     
     }
 
