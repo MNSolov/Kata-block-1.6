@@ -45,16 +45,14 @@ $picture-desctop-width: 40%;
         height: $about-company-desctop-height;
     }
 
-    &__expand {
+    &__button {
         margin-left: 16px;
-        display: flex;
+
         font-family: $font-family;
         font-size: $expand-font-size;
         color: $font-color;
         font-weight: $expand-font-weight;
 
-        align-items: center;
-        width: $expand-width;
         height: $expand-height;
 
 

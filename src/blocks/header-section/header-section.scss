@@ -1,0 +1,21 @@
+@import '../page/page.scss';
+
+$font-size: 16px;
+$header-text-color: #7E7E82;
+$header-background-image: linear-gradient(to right, #F8F8F8 0%, #ffffff 100%);
+
+.header-section {
+    margin: 0;
+    padding: 15px 12px;
+
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: $header-text-color;
+
+    background-image: $header-background-image;
+    border-top: 1px solid #D9FFF5;
+}

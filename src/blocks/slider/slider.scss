@@ -1,0 +1,17 @@
+@import '../page/page.scss';
+
+.swiper-slide {
+    padding: 20px 10px;
+    min-width: 0;
+}
+
+.slider {
+    height: max-content;
+    /*display: none;*/
+     min-width: 0;
+     padding-bottom: 20px;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}

@@ -1,0 +1,143 @@
+@import '../page/page.scss';
+
+$width: 5%;
+$min-width: 240px;
+$card-height: 160px;
+$card-color: white;
+$card-border-color: #EAEAEA;
+$card-border-radius: 6px;
+
+$padding: 20px;
+
+$text-size: 16px;
+$font-color: #1B1C21;
+$font-weight: 500;
+
+$card-gap: 10px;
+
+$menu-height: 220px;
+$menu-height--state-big: 400px;
+$menu-height-tablet--state-big: 400px;
+$menu-height-desctop--state-big: 400px;
+
+.repair {
+
+    &__menu {
+
+        list-style: none;
+
+        padding: $padding;
+        margin: 0;
+
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+
+        gap: $card-gap;
+
+        height: $menu-height;
+
+        @media (min-width: $tablet) {
+            display: flex;
+            align-content: space-evenly;
+        }
+
+        @media (min-width: $desctop) {
+            display: flex;
+            align-content: space-evenly;
+        }
+
+
+        &--state-big {
+
+            height: $menu-height--state-big;
+
+            @media (min-width: $tablet) {
+
+                height: $menu-height-tablet--state-big;
+            }
+
+            @media (min-width: $desctop) {
+
+                height: $menu-height-desctop--state-big;
+            }
+        }
+    }
+
+    &__card {
+        
+        display: inline-flex;
+        
+        justify-content: space-between;
+
+        padding: $padding;
+        width: 100%;
+        min-width: min-content;
+        height: $card-height;
+
+        background-color: $card-color;
+        border: 1px solid $card-border-color;
+        border-radius: $card-border-radius;
+
+        &--state-768, &--state-1119 {
+            
+            @media (min-width: $tablet) {
+            
+                display: none;
+            }
+        }
+
+        &--state-768 {
+
+            @media (min-width: $desctop) {
+                
+                display: flex;
+            }
+        }
+
+        &--state-1119 {
+
+            @media (min-width: $desctop) {
+
+                display: none;
+            }
+        }
+
+        @media (min-width: $tablet) {
+
+            width: 25%;
+        }
+
+        @media (min-width: $desctop) {
+            width: 20%;
+        }
+        
+        
+    }
+
+    &__text {
+
+        margin: 0;
+        
+        padding: 0;
+
+        padding-bottom: auto;
+
+        font-family: $font-family;
+        color: $font-color;
+        font-weight: 500;
+    }
+
+    &__link {
+
+        margin-top: auto;
+
+        &:hover {
+            opacity: 0.4;
+            transition-duration: 0.8s;
+        }
+        
+    }
+
+}

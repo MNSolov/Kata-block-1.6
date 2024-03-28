@@ -14,3 +14,8 @@ import '../blocks/aside-footer-menu/aside-footer-menu.scss';
 import '../blocks/menu-lang/menu-lang.scss';
 import '../blocks/brands/brands.scss';
 import '../blocks/brands/brands.js';
+import '../blocks/button-show/button-show.scss';
+import '../blocks/header-section/header-section.scss';
+import '../blocks/slider/slider.js';
+import '../blocks/slider/slider.scss';
+import '../blocks/repair/repair.scss';

@@ -5,6 +5,7 @@ const { SplitChunksPlugin } = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const OptimizeCSSWebpackPlugin = require('css-minimizer-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 console.log('isDev: ', isDev);
@@ -66,6 +67,16 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: filename('css'),
         }),
+        new CopyWebpackPlugin({
+            patterns: [
+              { from: path.resolve(__dirname, 'src/img/expand.svg'), 
+                to: path.resolve(__dirname, 'dist') },
+              
+              { from: path.resolve(__dirname, 'src/img/expand-reverse.svg'), 
+                to: path.resolve(__dirname, 'dist') },
+            ],
+          }),
+       
     ],
     module: {
         rules: [

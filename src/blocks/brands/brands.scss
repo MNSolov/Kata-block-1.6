@@ -1,28 +1,22 @@
 @import "../page/page.scss";
 
+
+$menu-height: 170px;
+$menu-height--state-big: 300px;
+$menu-height-tablet--state-big: 330px;
+$menu-height-desctop--state-big: 250px;
+
+$card-height: 72px;
+$card-border: 1px solid #EAEAEA;
+$card-color: #ffffff;
+
 .brands {
     margin: 0;
     padding: 0;
 
     padding-bottom: 1px;
 
-    background-color: #F8F8F8;
-
-    &__header {
-        margin: 0;
-        padding: 15px 12px;
-    
-        font-family: "TT Lakes", "Arial", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        text-transform: uppercase;
-        vertical-align: middle;
-        color: #7E7E82;
-    
-        background-image: linear-gradient(to right, #F8F8F8 0%, #ffffff 100%);
-    }
+   // background-color: #F8F8F8;
 
     &__menu {
         margin: 0;
@@ -31,7 +25,7 @@
         display: none;
         flex-direction: column;
         flex-wrap: wrap;  
-        height: 200px;
+        height: $menu-height;
         align-content: space-evenly;
        
         gap: 20px;
@@ -42,16 +36,16 @@
 
         &--state-big {
 
-            height: 300px;
+            height: $menu-height--state-big;
 
             @media (min-width: $tablet) {
 
-                height: 400px;
+                height: $menu-height-tablet--state-big;
             }
 
             @media (min-width: $desctop) {
 
-                height: 300px;
+                height: $menu-height-desctop--state-big;
             }
         }
 
@@ -78,9 +72,10 @@
         width: 100%;
         min-width: min-content;
         
-        max-height: 72px;
-        background-color: #ffffff;
-        border: 1px solid #EAEAEA;
+        max-height: $card-height;
+        background-color: $card-color;
+        border: $card-border;
+        border-radius: 6px;
 
         &--state-768, &--state-1119 {
             
@@ -121,48 +116,20 @@
     }
 
     &__button-show {
-        border: none;
-        background-color: #F8F8F8;
-        background-image: url('../../img/expand.svg');
-        background-repeat: no-repeat;
-    
-        font-family: "TT Lakes", "Arial", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        text-align: end;
-    
-        width: 133px;
-        height: 24px;
-    
+        
         margin-left: 20px;
         margin-bottom: 20px;
-    
-        display: none;
-
-        &--state-button-hide {
-            background-image: url('../../img/expand-reverse.svg');
-            width: 90px;
-        }
-
-        &:hover {
-
-            cursor: pointer;
-        
-            font-weight: 700;
-        }
 
         @media (min-width: $tablet) {
 
-            display: block;
+            display: flex;
         }
 
         &__button-show {
 
             @media (min-width: $desctop) {
                 
-                display: block;
+                display: flex;
             }
         }
     
@@ -172,20 +139,7 @@
         opacity: 0.4;
         transition-duration: 0.8s;
     }
-
-    &__slider {
-        height: 135px;
-        /*display: none;*/
-         min-width: 0;
-
-        @media (min-width: $tablet) {
-            display: none;
-        }
-    }
     
 }
 
-.swiper-slide {
-    padding: 20px 10px;
-    min-width: 0;
-}
+
