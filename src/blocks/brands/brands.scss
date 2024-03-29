@@ -117,8 +117,15 @@ $card-color: #ffffff;
 
     &__button-show {
         
+        display: none;
+
         margin-left: 20px;
         margin-bottom: 20px;
+
+        @media (min-width: $mobile) {
+
+            display: none;
+        }
 
         @media (min-width: $tablet) {
 

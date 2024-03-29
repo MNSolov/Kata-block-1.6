@@ -1,0 +1,50 @@
+@import "../page/page.scss";
+
+$font-size: 14px;
+$line-hight: 16px;
+$text-color: #7E7E82;
+
+$info-width: 250px;
+
+$footer-border: 1px solid #D9FFF5;
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 20px;
+
+    border-top: $footer-border;
+
+    font-family: $font-family;
+    line-height: $line-hight;
+    color: $text-color;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+
+        height: 100px;
+    }
+    &__developers {
+
+        @media (min-width: $tablet) {
+
+            text-align: left;
+        }
+    }
+
+    &__info {
+
+        @media (min-width: $tablet) {
+
+            text-align: left;
+            text-align: right;
+            width: $info-width;
+        }
+    }
+}

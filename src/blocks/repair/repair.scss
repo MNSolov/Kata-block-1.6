@@ -113,6 +113,9 @@ $menu-height-desctop--state-big: 450px;
             width: 20%;
         }
         
+            @media (min-width: $tablet) {
+
+    }
         
     }
 
@@ -142,6 +145,8 @@ $menu-height-desctop--state-big: 450px;
 
     &__button-show {
         
+        display: none;
+
         margin-left: 20px;
         margin-bottom: 20px;
 

@@ -1,0 +1,233 @@
+@import "../page/page.scss";
+
+$button-width: 119px;
+$button-height: 32px;
+$button-radius: 16px;
+$button-color: #FF3E79;
+$button-text-size: 12px;
+
+$table-text-size: 14px;
+$table-text-color: #1B1C21;
+$table-header-text-color: #7E7E82;
+
+$table-backgroun-color: #FFFFFF;
+
+$item-height: 65px;
+
+$text-width-tablet: 450px;
+$text-width: 250px;
+
+$table-item-line: 1px solid #EAEAEA;
+
+$card-height: 200px;
+
+.price {
+
+    
+
+    padding-bottom: 50px;
+
+    &__table {
+
+        display: none;
+
+        font-family: $font-family;
+        font-size: $table-text-size;
+        color: $table-text-color;
+
+        padding: 10px;
+
+        text-align: left;
+
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-collapse: collapse;
+
+        border-radius: 16px 0 0 0;
+
+        width: 100%;
+
+        @media (min-width: $tablet) {
+
+            display: table;
+        }
+    }
+
+    &__table-header {
+
+        color: $table-header-text-color;
+
+        height: 50px;
+
+    }
+
+    &__table-body {
+
+        background-color: $table-backgroun-color;
+        border-radius: 6px;
+    }
+
+
+    &__table-cell {
+
+        &:last-child {
+
+            direction: rtl;
+        }
+
+        &:first-child {
+            
+
+        }
+    }
+
+    &__table-item {
+
+        border-bottom: $table-item-line;
+
+        height: $item-height;
+
+        &:last-child {
+
+            border-bottom: none;
+        }
+
+    }    
+
+    &__button-order {
+
+        display: flex;
+
+        justify-content: space-between;
+        align-items: baseline;
+
+        padding: 3px;
+
+        padding-left: 14px;
+        padding-right: 12px;
+
+        background-color: $button-color;
+        border: 1px solid $button-color;
+
+        border-radius: $button-radius;
+
+        box-shadow: none;
+
+        color: white;
+
+        font-size: $button-text-size;
+        font-family: $font-family;
+        font-weight: 700;
+
+        white-space: pre;
+
+        width: $button-width;
+        height: $button-height;
+
+        &:hover {
+
+            cursor: pointer;
+            opacity: 0.5;
+            transition: 0.7s;
+        }
+
+        &:active {
+
+            background-color: $button-color;
+            border: 1 solid $button-color;
+
+            border-radius: $button-radius;
+
+            box-shadow: none;
+        }
+
+    }
+
+    &__sign {
+
+        padding: 0;
+
+        font-size: large;
+    }
+
+    &__text {
+
+        //display: none;
+
+        width: $text-width;
+    
+        margin: 20px;
+
+        font-family: $font-family;
+        font-size: 14px;
+        line-height: 20px;
+
+        @media (min-width: $tablet) {
+
+            width: $text-width-tablet;
+        }
+    }
+
+    &__button-get {
+
+        padding: 20px;
+
+        &-sign {
+
+            padding-left: 5px;
+            color: #FF3E79;
+        }
+    }
+
+    &__card {
+
+        display: flex;
+
+        flex-direction: column;
+
+        height: $card-height;
+
+        padding: 20px;
+
+        background-color: white;
+        border-radius: 6px;
+
+        width: 100%;
+    }
+
+    &__card-item {
+
+        margin-top: 10px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+
+        flex-shrink: 0;
+
+        height: 60px;
+    }
+
+    &__card-header {
+
+        margin: 0;
+
+        padding: 0;
+
+        font-family: $font-family;
+        font-size: $table-text-size;
+        color: $table-header-text-color;
+    }
+
+    &__card-text {
+
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+
+        font-family: $font-family;
+        font-size: $table-text-size;
+        color: $table-text-color;
+    }
+}

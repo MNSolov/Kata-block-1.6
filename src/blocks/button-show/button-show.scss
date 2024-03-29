@@ -5,7 +5,7 @@ $font-color: #1B1C21;
 
 .button-show {
 
-    display: none;
+    display: flex;
     font-family: $font-family;
     font-size: $expand-font-size;
     color: $font-color;
@@ -15,7 +15,6 @@ $font-color: #1B1C21;
 
     border: none;
     background-color: transparent;
-    background-repeat: no-repeat;
 
     width: max-content;
     height: 24px;
@@ -27,8 +26,4 @@ $font-color: #1B1C21;
         font-weight: 700;
     }
 
-    @media (min-width: $tablet) {
-
-        display: inline-flex;
-    }
 }
