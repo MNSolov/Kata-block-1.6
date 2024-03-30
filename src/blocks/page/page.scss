@@ -20,4 +20,9 @@ $font-family: "TT Lakes", "Arial", sans-serif;
 
         flex-direction: row;
     }
+
+    &--state-blur {
+
+        filter: blur(10px);
+    }
 }

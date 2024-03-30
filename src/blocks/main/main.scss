@@ -1,0 +1,19 @@
+@import '../page/page.scss';
+
+
+.main {
+
+    &--state-blur {
+
+        filter: blur(10px);
+
+        opacity: 0.2;
+
+        @media (min-width: $desctop) {
+
+            filter: none;
+
+            opacity: 1;
+        }
+    }
+}

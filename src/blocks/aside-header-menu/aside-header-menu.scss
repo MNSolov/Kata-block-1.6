@@ -1,6 +1,6 @@
 @import "../page/page.scss";
 
-$padding: 20px;
+$padding: 10px;
 
 .aside-header-menu {
 
@@ -9,12 +9,13 @@ $padding: 20px;
 
     padding-left: $padding;
     padding-right: $padding;
+    align-items: center;
 
     &__item {
         
         &:first-child {
 
-            @media (min-width: $tablet) {
+            @media (min-width: $desctop) {
 
                 display: none;
             }

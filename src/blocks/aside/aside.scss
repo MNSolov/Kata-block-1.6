@@ -10,16 +10,40 @@ $sub-menu-padding: 20px;
 .aside {
     display: none;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     min-width: $aside-width;
-   // box-shadow: 16px 0 52px 0 rgba(69,79,126,0.5);
-    height: $aside-height;
+   
     min-height: $aside-min-height;
     background-color: $aside-backgroud-color;
 
     @media (min-width: $desctop) {
 
         display: flex;
+    }
+
+    &--mobile-menu {
+
+        display: flex;
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: $aside-width;
+
+        box-shadow: 16px 0 52px 0 rgba(69,79,126,0.5);
+        height: $aside-height;
+
+        z-index: 10;
+
+        @media (min-width: $desctop) {
+
+          box-shadow: none;
+          position: static;
+
+          height: auto;
+        }
     }
 }
 

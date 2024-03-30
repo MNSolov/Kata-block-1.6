@@ -18,4 +18,18 @@ $border-color: #D9FFF5;
 
         display: none;
     }
+
+    &--state-blur {
+
+        filter: blur(10px);
+
+        opacity: 0.2;
+
+        @media (min-width: $desctop) {
+
+            filter: none;
+
+            opacity: 1;
+        }
+    }
 }
