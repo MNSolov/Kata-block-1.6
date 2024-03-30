@@ -7,15 +7,11 @@ $text-color: #7E7E82;
 $info-width: 250px;
 
 $footer-border: 1px solid #D9FFF5;
+$padding-top-bottom: 10px;
 
 .footer {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: space-between;
-    flex-wrap: wrap;
+    
 
     padding: 20px;
 
@@ -28,9 +24,20 @@ $footer-border: 1px solid #D9FFF5;
 
     @media (min-width: $tablet) {
 
-        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: space-between;
+        flex-wrap: wrap;
+
+        height: 70px;
     }
     &__developers {
+
+        margin: 0;
+
+        padding-top: $padding-top-bottom;
 
         @media (min-width: $tablet) {
 
@@ -38,7 +45,35 @@ $footer-border: 1px solid #D9FFF5;
         }
     }
 
+    &__politics {
+
+        margin: 0;
+        display: block;
+        text-decoration: none;
+
+        padding-top: $padding-top-bottom;
+
+        font-family: $font-family;
+        line-height: $line-hight;
+        color: $text-color;
+
+        &:hover {
+
+            font-weight: 700;
+        }
+
+        @media (min-width: $tablet) {
+
+            padding-bottom: 40px;
+        }
+    }
+
     &__info {
+
+        margin: 0;
+
+        padding-top: $padding-top-bottom;
+        padding-bottom: $padding-top-bottom;
 
         @media (min-width: $tablet) {
 

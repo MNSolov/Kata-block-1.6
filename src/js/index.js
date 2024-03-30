@@ -6,6 +6,7 @@ import '../blocks/sub-menu/sub-menu.scss';
 import '../blocks/menu/menu.scss';
 import '../blocks/button-show/button-show.scss';
 import '../blocks/about-company/about-company.scss';
+import '../blocks/about-company/about-company.js';
 import '../blocks/aside/aside.scss';
 import '../blocks/button/button.scss';
 import '../blocks/aside-header-menu/aside-header-menu.scss';
@@ -15,7 +16,6 @@ import '../blocks/aside-footer-menu/aside-footer-menu.scss';
 import '../blocks/menu-lang/menu-lang.scss';
 import '../blocks/brands/brands.scss';
 import '../blocks/brands/brands.js';
-
 import '../blocks/header-section/header-section.scss';
 import '../blocks/slider/slider.js';
 import '../blocks/slider/slider.scss';
