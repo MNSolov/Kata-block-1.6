@@ -49,4 +49,3 @@ function brandsShowHide() {
 
 
 buttonShow.addEventListener('click', brandsShowHide);
-//buttonShow.addEventListener('click', a);

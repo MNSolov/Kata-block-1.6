@@ -16,13 +16,25 @@ $font-family: "TT Lakes", "Arial", sans-serif;
     display: flex;
     flex-direction: column;
 
+    overflow: scroll;
+
     @media (min-width: $desctop) {
 
         flex-direction: row;
     }
 
-    &--state-blur {
+    &--state-blur-mobile {
 
-        filter: blur(10px);
+        overflow: hidden;
+
+        @media (min-width: $desctop) {
+
+            overflow: scroll;
+        }      
+    }
+
+    &--state-blur-form {
+
+        overflow: hidden;
     }
 }

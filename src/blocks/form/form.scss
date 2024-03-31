@@ -1,0 +1,167 @@
+@import '../page/page.scss';
+
+$padding: 20px;
+
+$form-height: 100%;
+$form-width: 320px;
+$form-width-tablet: 360px;
+$form-background-color: white;
+
+$font-size-title: 24px;
+$font-color-title: #1B1C21;
+$font-color-text: #7E7E82;
+$font-size-text: 14px;
+$line-height-text: 16px;
+
+$title-width: 170px;
+$title-height: 40px;
+
+$input-height: 48px;
+$input-border: 1px solid #EAEAEA;
+$input-border-radius: 4px;
+$input-text-size: 16px;
+$input-placeholder-text-color: #B5B6BC;
+
+
+.form {
+
+    display: none;
+
+    position: fixed;
+
+    right: 0;
+    top: 0;
+
+    box-shadow: 16px 0 52px 0 rgba(69,79,126,0.5);
+
+    z-index: 10;
+
+    width: $form-width;
+    height: $form-height;
+
+    background-color: $form-background-color;
+
+    padding-top: $padding;
+    padding-left: $padding;
+    padding-right: $padding;
+
+    @media (min-width: $tablet) {
+
+        padding-top: 0;
+        width: $form-width-tablet;
+    }
+
+    &__button-close {
+
+        @media (min-width: $tablet) {
+
+            position: absolute;
+
+            top: 20px;
+            left: -70px;
+        }
+    }
+
+    &__title {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-family: $font-family;
+        font-size: $font-size-title;
+        color: $font-color-title;
+
+        font-weight: 700;
+
+        white-space: nowrap;
+        text-align: end;
+        
+        width: $title-width;
+        height: $title-height;
+        
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+
+            width: 3px;
+            height: 40px;
+            background-color: #41F6D7;
+            border-radius: 0 4px 4px 0;
+
+            left: -20px;
+        }
+    }
+
+    &__input {
+
+        box-sizing: border-box;
+
+        width: 100%;
+        height: $input-height;
+
+        margin-bottom: 10px;
+
+        border: $input-border;
+        border-radius: $input-border-radius;
+
+        font-family: $font-family;
+        font-size: $input-text-size;
+
+        padding: 10px;
+
+        &::placeholder {
+
+            color: $input-placeholder-text-color;
+            
+        }
+    }
+
+    &__text {
+
+        font-family: $font-family;
+        font-size: $font-size-text;
+        line-height: $line-height-text;
+        color: $font-color-text;
+    }
+
+    &__button-order {
+
+        margin-top: 20px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    &__message {
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        margin-bottom: 10px;
+
+        border: $input-border;
+        border-radius: $input-border-radius;
+
+        font-family: $font-family;
+        font-size: $input-text-size;
+
+        padding: 10px;
+
+        &::placeholder {
+
+            color: $input-placeholder-text-color;
+            
+        }
+
+        height: 100px;
+    }
+
+    &--visible {
+
+        display: block;
+    }
+}

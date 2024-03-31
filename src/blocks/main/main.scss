@@ -3,17 +3,31 @@
 
 .main {
 
-    &--state-blur {
+    &--state-blur-form {
 
         filter: blur(10px);
 
         opacity: 0.2;
+
+        cursor: default;
+
+    }
+
+    &--state-blur-mobile {
+
+        filter: blur(10px);
+
+        opacity: 0.2;
+
+        cursor: default;
 
         @media (min-width: $desctop) {
 
             filter: none;
 
             opacity: 1;
+
+            cursor: default;
         }
     }
 }

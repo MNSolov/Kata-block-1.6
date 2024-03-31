@@ -7,10 +7,6 @@ $button-border-radius: 20px;
     background-color: transparent;
     border-radius: $button-border-radius;
 
- /*   display: flex;
-    align-items: center;
-    justify-content: space-between;*/
-
     &:hover {
         cursor: pointer;
         opacity: 0.5;

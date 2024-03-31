@@ -2,6 +2,7 @@
 
 $aside-backgroud-color: white;
 $aside-width: 320px;
+$aside-tablet-width: 360px;
 $aside-height: 100%;
 $aside-min-height: 750px;
 
@@ -25,7 +26,7 @@ $sub-menu-padding: 20px;
 
         display: flex;
 
-        position: absolute;
+        position: fixed;
 
         top: 0;
         left: 0;
@@ -37,13 +38,28 @@ $sub-menu-padding: 20px;
 
         z-index: 10;
 
+        @media (min-width: $tablet) {
+
+            width: $aside-tablet-width;
+        }
+
         @media (min-width: $desctop) {
 
           box-shadow: none;
           position: static;
 
           height: auto;
+          width: $aside-width;
         }
+    }
+
+    &--state-blur {
+
+        filter: blur(10px);
+
+        opacity: 0.2;
+
+        cursor: default;
     }
 }
 
